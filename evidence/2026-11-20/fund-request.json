@@ -1,0 +1,79 @@
+{
+  "detect_inputs": true,
+  "detect_inputs_use_unversioned": true,
+  "lock_ids": [],
+  "other_signers": [],
+  "seal_signer": {
+    "Derived": {
+      "index": 0,
+      "key_branch": "account"
+    }
+  },
+  "signatures": [],
+  "transaction": {
+    "V1": {
+      "blobs": [],
+      "dry_run": false,
+      "fee_instructions": [
+        {
+          "CallMethod": {
+            "args": [
+              {
+                "Literal": "190d24"
+              }
+            ],
+            "call": {
+              "Address": "component_da95037acc1ea18aa722b935bbd8e371398918078f6c92c86833e98c7c8e2908"
+            },
+            "method": "pay_fee"
+          }
+        }
+      ],
+      "inputs": [],
+      "instructions": [
+        {
+          "CallMethod": {
+            "args": [
+              {
+                "Literal": "d88358200101010101010101010101010101010101010101010101010101010101010101"
+              },
+              {
+                "Literal": "1a0016e360"
+              }
+            ],
+            "call": {
+              "Address": "component_da95037acc1ea18aa722b935bbd8e371398918078f6c92c86833e98c7c8e2908"
+            },
+            "method": "withdraw"
+          }
+        },
+        {
+          "PutLastInstructionOutputOnWorkspace": {
+            "key": 0
+          }
+        },
+        {
+          "CallMethod": {
+            "args": [
+              {
+                "Workspace": {
+                  "id": 0,
+                  "offset": null
+                }
+              }
+            ],
+            "call": {
+              "Address": "component_ac36d00612326df867f634b7e85772d7816ed15c664e01d0592da947b9323187"
+            },
+            "method": "fund"
+          }
+        }
+      ],
+      "main_signer": "SealSigner",
+      "max_epoch": 39099,
+      "min_epoch": null,
+      "network": 0,
+      "nonce": 1795199195317448484
+    }
+  }
+}

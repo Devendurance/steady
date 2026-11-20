@@ -1,0 +1,71 @@
+{
+  "detect_inputs": true,
+  "detect_inputs_use_unversioned": true,
+  "lock_ids": [],
+  "other_signers": [],
+  "seal_signer": {
+    "Derived": {
+      "index": 0,
+      "key_branch": "account"
+    }
+  },
+  "signatures": [],
+  "transaction": {
+    "V1": {
+      "blobs": [],
+      "dry_run": false,
+      "fee_instructions": [
+        {
+          "CallMethod": {
+            "args": [
+              {
+                "Literal": "1a000f4240"
+              }
+            ],
+            "call": {
+              "Address": "component_da95037acc1ea18aa722b935bbd8e371398918078f6c92c86833e98c7c8e2908"
+            },
+            "method": "pay_fee"
+          }
+        }
+      ],
+      "inputs": [],
+      "instructions": [
+        {
+          "CallFunction": {
+            "address": "54d64fdd5af8a40fe9331611e1f37f473c1bf670f32523e2b093d704e76e3983",
+            "args": [
+              {
+                "Literal": "1a0007a120"
+              },
+              {
+                "Literal": "03"
+              },
+              {
+                "Literal": "05"
+              },
+              {
+                "Literal": "1998b8"
+              },
+              {
+                "Literal": "190870"
+              },
+              {
+                "Literal": "784065636238616164643463643335343864316431626131396337303261653263306337656562386564663236633935613634323735663964343961616439633263"
+              },
+              {
+                "Literal": "704e6f72746877696e642053747564696f"
+              }
+            ],
+            "function": "new"
+          }
+        }
+      ],
+      "main_signer": "SealSigner",
+      "max_epoch": 39099,
+      "min_epoch": null,
+      "network": 0,
+      "nonce": 1795199184370334314
+    }
+  }
+}

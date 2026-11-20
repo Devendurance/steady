@@ -1,0 +1,8 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "dry_run_fee": 1144236,
+    "transaction_id": "e02caa0f6e21d7b1ff3397df675957c26cbcbec000e753d5ee432cee58141c4e"
+  },
+  "id": 1
+}

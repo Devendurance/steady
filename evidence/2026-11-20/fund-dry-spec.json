@@ -1,0 +1,15 @@
+{
+  "action": "fund",
+  "rail": "component_ac36d00612326df867f634b7e85772d7816ed15c664e01d0592da947b9323187",
+  "amount_micro": "1500000",
+  "max_fee": "1000000",
+  "network": "mainnet",
+  "current_epoch": "39096",
+  "fee_account": "component_da95037acc1ea18aa722b935bbd8e371398918078f6c92c86833e98c7c8e2908",
+  "seal_signer": {
+    "Derived": {
+      "index": 0,
+      "key_branch": "account"
+    }
+  }
+}

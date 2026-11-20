@@ -1,0 +1,21 @@
+{
+  "action": "create",
+  "template": "54d64fdd5af8a40fe9331611e1f37f473c1bf670f32523e2b093d704e76e3983",
+  "monthly_budget": "500000",
+  "months": "3",
+  "payee_count": "5",
+  "start_epoch": "39096",
+  "epochs_per_month": "2160",
+  "roster_hash": "ecb8aadd4cd3548d1d1ba19c702ae2c0c7eeb8edf26c95a64275f9d49aad9c2c",
+  "label": "Northwind Studio",
+  "max_fee": "3328",
+  "network": "mainnet",
+  "current_epoch": "39096",
+  "fee_account": "component_da95037acc1ea18aa722b935bbd8e371398918078f6c92c86833e98c7c8e2908",
+  "seal_signer": {
+    "Derived": {
+      "index": 0,
+      "key_branch": "account"
+    }
+  }
+}
