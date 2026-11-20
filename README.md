@@ -78,15 +78,26 @@ Every push to `main` deploys `web/dist` to GitHub Pages.
 
 ## Mainnet deployment
 
-_Filled after publication._
+Published **20 November 2026, 18:24:14 UTC**, epoch **39096**.
 
 | Item | Value |
 |---|---|
 | Network | Tari Ootle mainnet |
-| Template | pending |
-| Component | pending |
-| Publish tx | pending |
-| Published | pending |
+| Template | `template_54d64fdd5af8a40fe9331611e1f37f473c1bf670f32523e2b093d704e76e3983` |
+| Component | `component_ac36d00612326df867f634b7e85772d7816ed15c664e01d0592da947b9323187` |
+| Publish tx | `3acf52a95f15b82eabc89915b060e743c03bf06786067467e658d3c4f0798cbf` |
+| Publish fee | 1.144224 TARI |
+
+The proof run created the payroll, funded 1.5 TARI (3 months at 0.5 TARI/month), and released
+month 1. Live state after the run: 1.0 TARI in the vault, 5 people, 3 months committed, 1
+released, runway 2.0 months, roster hash `ecb8aadd…`. The proof page reads these values straight
+from `indexer-a.ootle.tari.com`.
+
+| Step | Transaction |
+|---|---|
+| Create payroll | `9b6d40087ee796fa9f3cf37cacf798b55c4cd06246a535d7de8585ce7c5dddbe` |
+| Fund 1.5 TARI | `7de7dd8959652a7e324a7ae197f850f34a454b62dfa69f74e990b220ac1d793f` |
+| Release month 1 | `b0402fedca3d0e52cb6ebfa571981c5dad8a29708cf0944afd8c65d03064ba6f` |
 
 ## Privacy model and limits
 

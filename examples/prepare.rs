@@ -119,17 +119,13 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         _ => return Err("action must be create, fund, release or transfer".into()),
     }
 
-    // walletd 0.54/0.55 signs V2; the official V2 envelope carries the same V1 body.
+    // walletd 0.54 expects the V1 unsigned envelope. (0.55 introduced the V2 envelope.)
     let unsigned = serde_json::to_value(tx.build_unsigned())?;
-    let body = unsigned
-        .get("V1")
-        .ok_or("Expected pinned SDK V1 unsigned body")?;
-    let unsigned_v2 = serde_json::json!({ "V2": body });
 
     println!(
         "{}",
         serde_json::to_string_pretty(&serde_json::json!({
-            "transaction": unsigned_v2,
+            "transaction": unsigned,
             "seal_signer": spec["seal_signer"],
             "other_signers": spec.get("other_signers").cloned().unwrap_or(serde_json::json!([])),
             "signatures": [],
