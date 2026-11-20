@@ -37,7 +37,7 @@ export function Landing({ payroll }: { payroll: Payroll }) {
             </a>
           </div>
           <p className="micro">
-            No wallet needed · 2-minute walkthrough · Open source, MIT
+            No wallet needed · Live on Ootle mainnet · Open source, MIT
           </p>
         </div>
 
